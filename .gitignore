@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Please create this file in the project folder to store your pull requesst.
+pull-requests.txt
