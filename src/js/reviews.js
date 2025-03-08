@@ -16,11 +16,12 @@ function reviewsTemplate(arr) {
   return arr.map(reviewTemplate).join('');
 }
 
-const reviewsSwiper = document.querySelector('.reviews-swiper');
 const reviewsUl = document.querySelector('#reviews-list');
 try {
+  // Populate the reviews list
   const response = await getReviews();
   reviewsUl.innerHTML = reviewsTemplate(response.data);
+  // Initialize swiper on the reviews list
   const reviewsSwiperConfig = {
     navigation: {
       nextEl: '.reviews-next-card',
@@ -44,5 +45,5 @@ try {
       },
     },
   };
-  const reviewsSwiperInstance = new Swiper(reviewsSwiper, reviewsSwiperConfig);
+  const reviewsSwiper = new Swiper('.reviews-swiper', reviewsSwiperConfig);
 } catch {}
