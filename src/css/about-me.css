@@ -3,6 +3,7 @@
   background-color: #1c1d20;
   padding-top: 32px;
   padding-bottom: 32px;
+  overflow: hidden;
 }
 .about-me-container {
   width: 100%;
