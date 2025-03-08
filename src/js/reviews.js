@@ -1,18 +1,21 @@
 import axios from 'axios';
 
 async function getReviews() {
-  const axiosConfig = {
-    baseURL: 'https://pixabay.com/api/',
-    params: {
-      key: '48827874-cd9b9c73a8babeb73b5d7fdc9',
-      q: `${query}`,
-      image_type: 'photo',
-      orientation: 'horizontal',
-      safesearch: 'true',
-      page: `${page}`,
-      per_page: `${perPage}`,
-    },
-  };
-  const pixabayAxios = new axios.create(axiosConfig);
-  return await pixabayAxios.get('');
+  return await axios.get('https://portfolio-js.b.goit.study/api/reviews');
 }
+function reviewTemplate({ author, avatar_url, review }) {
+  return `<li>
+            <img src="${avatar_url}" alt="${author}'s photo" />
+            <h3>${author}</h3>
+            <p>${review}</p>
+          </li>`;
+}
+function reviewsTemplate(arr) {
+  return arr.map(reviewTemplate).join('');
+}
+
+const reviewsUl = document.querySelector('.reviews-list');
+try {
+  const response = await getReviews();
+  reviewsUl.innerHTML = reviewsTemplate(response.data);
+} catch {}
