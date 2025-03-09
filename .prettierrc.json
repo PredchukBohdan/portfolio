@@ -6,7 +6,5 @@
   "trailingComma": "es5",
   "bracketSpacing": true,
   "arrowParens": "avoid",
-  "proseWrap": "always",
-  "editor.wordWrap": "wordWrapColumn",
-  "editor.wordWrapColumn": 120
+  "proseWrap": "always"
 }
