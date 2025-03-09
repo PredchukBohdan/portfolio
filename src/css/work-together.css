@@ -1,0 +1,328 @@
+.work-together {
+  width: 375px;
+  padding-top: 32px;
+}
+
+.work-together-section {
+  padding: 32px 16px;
+  background-image: url(../img/work-together/Glass-effect-mob-@1x.jpg),
+    url(../img/work-together/Glass-effect-mob-@2x.jpg);
+  background-size: auto 100%;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.work-together-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 63px;
+}
+
+.work-together-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.work-together-bottom {
+  gap: 4px;
+}
+
+.work-together-logo {
+  border-radius: 12px;
+}
+
+.work-together-heading-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-together-heading {
+  width: 215px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.work-together-heading-accent {
+  color: #ed3b44;
+}
+
+.work-together-field-container {
+  display: block;
+  align-items: center;
+}
+
+.work-together-contact-field {
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.work-together-input {
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  padding: 20px 0;
+  text-overflow: clip;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.work-together-input::placeholder {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.work-together-input:hover,
+.work-together-input:focus,
+.work-together-input::placeholder:hover,
+.work-together-input::placeholder:focus {
+  color: #fafafa;
+  border-color: #fafafa;
+}
+
+.work-together-btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  background-color: #ed3b44;
+  margin-top: 32px;
+  margin-bottom: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-together-btn:hover,
+.work-together-btn:focus {
+  background-color: #e0373f;
+}
+
+.work-together-contacts {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.work-together-contacts-list {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.work-together-contacts-item {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 10px 12px;
+}
+
+.work-together-contacts-link {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+}
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.backdrop:not(.is-open) .modal {
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+.modal {
+  width: 343px;
+  min-height: 276px;
+  background-color: #1c1d20;
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  border-radius: 20px;
+  padding: 64px 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.icon-close {
+  stroke: #fafafa;
+}
+
+.modal-heading {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.modal-descr {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.validation-message {
+  font-size: 14px;
+  margin-top: 5px;
+  position: absolute;
+}
+
+.success-message {
+  color: #3cbc81;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .work-together {
+    padding-top: 48px;
+  }
+
+  .work-together-section {
+    width: 768px;
+    padding: 80px 32px;
+    background-image: url(../img/work-together/Glass-effect-tab-@1x.jpg),
+      url(../img/work-together/Glass-effect-tab-@2x.jpg);
+  }
+
+  .work-together-container {
+    margin-bottom: 64px;
+  }
+
+  .work-together-top {
+    gap: 20px;
+  }
+
+  .work-together-bottom {
+    gap: 7px;
+  }
+
+  .work-together-logo-container {
+    gap: 8px;
+  }
+
+  .work-together-logo {
+    border-radius: 24px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .work-together-heading {
+    width: 442px;
+    font-size: 64px;
+  }
+
+  .work-together-form-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 18px;
+  }
+  /* .work-together-form-container {
+  display: flex;
+  flex-grow: 1;
+  gap: 32px;
+} */
+  .work-together-btn {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 22px;
+    margin-top: 18px;
+    flex-shrink: 0;
+  }
+
+  .work-together-contacts {
+    margin-bottom: 169px;
+  }
+
+  .work-together-contacts-list {
+    gap: 8px;
+  }
+
+  .work-together-contacts-item {
+    padding: 18px 32px;
+  }
+
+  .work-together-contacts-link {
+    font-size: 16px;
+  }
+
+  .modal {
+    width: 492px;
+    min-height: 246px;
+  }
+
+  .icon-close {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .work-together {
+    padding-top: 82px;
+  }
+
+  .work-together-section {
+    width: 1440px;
+    padding: 80px 196px;
+    background-image: url(../img/work-together/Glass-effect-desk-@1x.jpg),
+      url(../img/work-together/Glass-effect-desk-@2x.jpg);
+  }
+
+  .work-together-form-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  .work-together-btn {
+    margin-bottom: 18px;
+  }
+}
