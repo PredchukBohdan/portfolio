@@ -127,7 +127,7 @@
 .about-me-accordion__title .ac-trigger::after {
   display: none;
 }
-.about-me-accordion__content.ac-panel p.ac-text {
+.about-me-accordion__content.ac-panel li.ac-text {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -136,16 +136,16 @@
   color: #fafafa;
   padding: 0;
 }
-.about-me-accordion__content.ac-panel p.ac-text:first-child {
+.about-me-accordion__content.ac-panel li.ac-text:first-child {
   padding-top: 12px;
 }
-.about-me-accordion__content.ac-panel p.ac-text:last-child {
+.about-me-accordion__content.ac-panel li.ac-text:last-child {
   padding-bottom: 20px;
 }
-.about-me-accordion__content.ac-panel p.ac-text:not(:last-child) {
+.about-me-accordion__content.ac-panel li.ac-text:not(:last-child) {
   margin-bottom: 32px;
 }
-.about-me-accordion__content.ac-panel p.ac-text.small:not(:last-child) {
+.about-me-accordion__content.ac-panel li.ac-text.small:not(:last-child) {
   margin-bottom: 10px;
 }
 .about-me-accordion__icon {
@@ -193,13 +193,13 @@
     .ac-trigger {
     padding: 0 !important;
   }
-  .about-me-accordion__content.ac-panel p.ac-text:first-child {
+  .about-me-accordion__content.ac-panel li.ac-text:first-child {
     padding-top: 8px;
   }
-  .about-me-accordion__content.ac-panel p.ac-text:not(:last-child) {
+  .about-me-accordion__content.ac-panel li.ac-text:not(:last-child) {
     margin-bottom: 16px;
   }
-  .about-me-accordion__content.ac-panel p.ac-text:last-child {
+  .about-me-accordion__content.ac-panel li.ac-text:last-child {
     padding-bottom: 32px;
   }
 }
@@ -210,7 +210,7 @@
     margin-left: auto;
     margin-right: 68px;
   }
-  .about-me-accordion__content.ac-panel p.ac-text:not(:last-child) {
+  .about-me-accordion__content.ac-panel li.ac-text:not(:last-child) {
     margin-bottom: 32px;
   }
 }
