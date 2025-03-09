@@ -76,7 +76,7 @@
   color: var(--main-text);
 }
 #reviews-list > li > p {
-  padding-right: 12px;
+  padding-right: 8px;
   max-height: 120px;
   overflow-y: auto;
   scrollbar-width: thin;
@@ -99,6 +99,9 @@
   display: flex;
   flex-direction: row;
   gap: 12px;
+}
+.swiper-notification {
+  display: none;
 }
 .reviews-previous-card,
 .reviews-next-card {
