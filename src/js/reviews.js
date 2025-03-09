@@ -1,4 +1,6 @@
 import axios from 'axios';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
@@ -28,22 +30,23 @@ try {
       prevEl: '.reviews-previous-card',
     },
     slidesPerView: 1,
+    spaceBetween: 16,
     grabCursor: true,
+    mousewheel: true,
     keyboard: {
       enabled: true,
       onlyInViewport: true,
     },
-    mousewheel: true,
     breakpoints: {
       768: {
         slidesPerView: 2,
-        spaceBetween: 16,
       },
       1440: {
         slidesPerView: 4,
-        spaceBetween: 16,
       },
     },
   };
   const reviewsSwiper = new Swiper('.reviews-swiper', reviewsSwiperConfig);
-} catch {}
+} catch (err) {
+  reviewsUl.innerHTML = 'Not found';
+}
