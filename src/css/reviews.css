@@ -12,6 +12,7 @@
   color: rgba(250, 250, 250, 0.4);
 }
 .reviews-err {
+  display: block;
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 38px;
@@ -22,6 +23,7 @@
 }
 .reviews-err-btn {
   padding: 18px 50px;
+  display: block;
   border: none;
   border-radius: 60px;
   font-family: var(--font-family);
@@ -31,13 +33,23 @@
   color: var(--main-text);
   background-color: var(--button-text);
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 .reviews-err-btn:hover,
 .reviews-err-btn:focus {
   background-color: #e0373f;
 }
 .js-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 #reviews-list > li {
   padding: 32px 24px;
