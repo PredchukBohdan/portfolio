@@ -34,15 +34,17 @@
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: -0.02em;
-  color: #fafafa;
+  color: #fafafa !important;
   transition: padding 0.5s ease;
 }
 
 .accordion-wrapper .ac.ac-item.is-active .ac-trigger {
+  color: #fafafa !important;
   padding-bottom: 16px;
 }
 
 .accordion-wrapper .ac.acx.is-active .ac-trigger {
+  color: #fafafa !important;
   padding-bottom: 16px;
 }
 
