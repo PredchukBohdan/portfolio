@@ -1,15 +1,25 @@
 .work-together {
-  width: 375px;
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
   padding-top: 32px;
+  box-sizing: border-box;
 }
 
 .work-together-section {
+  max-width: 100%;
+  margin: 0 auto;
   padding: 32px 16px;
-  background-image: url(../img/work-together/Glass-effect-mob-@1x.jpg),
-    url(../img/work-together/Glass-effect-mob-@2x.jpg);
-  background-size: auto 100%;
-  background-position: right center;
+  background-image: url(../img/work-together/Glass-effect-mob-@1x.jpg);
   background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 100%;
+}
+
+@media screen and (min-resolution: 192dpi) {
+  .work-together-section {
+    background-image: url(../img/work-together/Glass-effect-mob-@2x.jpg);
+  }
 }
 
 .work-together-container {
@@ -87,6 +97,7 @@
 .work-together-input::placeholder:focus {
   color: #fafafa;
   border-color: #fafafa;
+  outline: none;
 }
 
 .work-together-btn {
@@ -126,12 +137,17 @@
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
   padding: 10px 12px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .work-together-contacts-link {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.02em;
+  white-space: nowrap;
 }
 
 .backdrop {
@@ -218,6 +234,7 @@
 /* Tablet */
 @media screen and (min-width: 768px) {
   .work-together {
+    max-width: 768px;
     padding-top: 48px;
   }
 
@@ -262,11 +279,6 @@
     gap: 32px;
     margin-bottom: 18px;
   }
-  /* .work-together-form-container {
-  display: flex;
-  flex-grow: 1;
-  gap: 32px;
-} */
   .work-together-btn {
     width: 150px;
     height: 150px;
@@ -302,8 +314,10 @@
   }
 }
 
+/* Desktop */
 @media screen and (min-width: 1440px) {
   .work-together {
+    max-width: 1440px;
     padding-top: 82px;
   }
 
@@ -323,6 +337,7 @@
   }
 
   .work-together-btn {
+    margin-left: 86px;
     margin-bottom: 18px;
   }
 }

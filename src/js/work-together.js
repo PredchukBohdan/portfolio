@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const commentInput = document.getElementById("user-comment");
   const modal = document.querySelector(".backdrop");
   const closeButton = document.querySelector(".close-btn");
+  const sendButton = document.querySelector(".send-button");
 
   const emailPattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
@@ -17,13 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     msgElement.textContent = message;
     msgElement.style.color = isValid ? "#3cbc81" : "#e74a3b";
-    msgElement.style.display = 'block'; 
+    msgElement.style.display = "block";
 
-    if (isValid) {
-      input.style.borderBottom = "2px solid #3cbc81"; 
-    } else {
-      input.style.borderBottom = "2px solid #e74a3b"; 
-    }
+    input.style.borderBottom = isValid ? "2px solid #3cbc81" : "2px solid #e74a3b";
   }
 
   emailInput.addEventListener("input", function () {
@@ -50,39 +47,32 @@ document.addEventListener("DOMContentLoaded", function () {
       }),
       headers: { "Content-Type": "application/json" },
     })
-    .then((response) => {
-      console.log("Server Response:", response);
-      if (!response.ok) throw new Error("Server error: " + response.statusText);
-      return response.json();
-    })
-    .then((data) => {
-      console.log("Server Response Data:", data);
-      form.reset();
-      document.querySelectorAll(".validation-message").forEach((el) => el.remove());
-      emailInput.style.borderBottom = "";
-      commentInput.style.borderBottom = "";
-      openModal();
-    })
-    .catch((error) => {
-      console.error("Submission error:", error);
-
-      alert("Submission failed. Please check your input and try again.");
-
-      if (!emailPattern.test(emailInput.value)) {
-        showMessage(emailInput, "Invalid email, try again", false);
-      } else {
-        showMessage(commentInput, "There was a problem submitting your comment", false);
-      }
-    });
+      .then((response) => {
+        if (!response.ok) throw new Error("Server error: " + response.statusText);
+        return response.json();
+      })
+      .then(() => {
+        form.reset();
+        document.querySelectorAll(".validation-message").forEach((el) => el.remove());
+        emailInput.style.borderBottom = "";
+        commentInput.style.borderBottom = "";
+        openModal();
+      })
+      .catch(() => {
+        alert("Submission failed. Please check your input and try again.");
+      });
   });
 
   function openModal() {
     modal.classList.add("is-open");
+    document.body.style.overflow = "hidden";
   }
 
   function closeModal() {
-    modal.classList.remove("is-open");
-  }
+  modal.classList.remove("is-open");
+  document.body.style.overflow = "";
+  document.activeElement.blur();
+}
 
   closeButton.addEventListener("click", closeModal);
 
@@ -91,6 +81,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") closeModal();
+    if (e.key === "Escape") {
+      closeModal();
+    }
   });
 });
+
