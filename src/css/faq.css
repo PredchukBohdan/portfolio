@@ -1,0 +1,245 @@
+.faq-section-container {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.faq-section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.faq-p {
+  font-family: 'Inter Tight', sans-serif;
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.accordion-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.accordion-wrapper .ac .ac-trigger {
+  font-family: 'Inter Tight', sans-serif;
+  display: flex;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa !important;
+  transition: padding 0.5s ease;
+}
+
+.accordion-wrapper .ac.ac-item.is-active .ac-trigger {
+  color: #fafafa !important;
+  padding-bottom: 16px;
+}
+
+.accordion-wrapper .ac.acx.is-active .ac-trigger {
+  color: #fafafa !important;
+  padding-bottom: 16px;
+}
+
+.faq-toggle-button {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  margin-left: 40px;
+  border-radius: 100px;
+}
+
+.faq-toggle-button.faq-toggle-button-project {
+  margin-left: 60px;
+}
+
+.faq-toggle-button.faq-toggle-button-support {
+  margin-left: 100px;
+}
+
+.accordion-wrapper .ac .ac-trigger::after {
+  display: none;
+}
+
+.faq-icon-up {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease;
+  stroke: #fafafa;
+}
+
+.accordion-wrapper .ac.ac-item.is-active .faq-icon-up,
+.accordion-wrapper .ac.acx.is-active .faq-icon-up {
+  transform: rotate(0deg);
+}
+
+.accordion-wrapper .ac .ac-panel .ac-text.faq-text-l,
+.accordion-wrapper .ac .ac-panel .ac-text.faq-text-r {
+  font-family: 'Inter Tight', sans-serif;
+  padding: 0px;
+  padding-bottom: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.accordion-wrapper .ac {
+  background: #1c1d20;
+  margin-bottom: 0px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-left: none;
+  border-right: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .faq-toggle-button {
+    padding: 7px;
+    width: 34px;
+    height: 34px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .faq-section-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .faq-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .accordion-wrapper .ac .ac-trigger {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .faq-toggle-button {
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .faq-toggle-button.faq-toggle-button-extra {
+    margin-left: 200px;
+  }
+
+  .accordion-wrapper .ac .ac-panel .ac-text.faq-text-l {
+    padding-right: 48px;
+    padding-bottom: 24px;
+  }
+
+  .accordion-wrapper .ac .ac-panel .ac-text.faq-text-r {
+    padding-right: 48px;
+    padding-bottom: 24px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .faq-section-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .faq-section {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+
+  .accordion-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .faq-toggle-button.faq-toggle-button-extra {
+    margin-left: 150px;
+  }
+
+  .accordion-wrapper li:nth-child(1) {
+    order: 1;
+  }
+  .accordion-wrapper li:nth-child(2) {
+    order: 3;
+  }
+  .accordion-wrapper li:nth-child(3) {
+    order: 5;
+  }
+  .accordion-wrapper li:nth-child(4) {
+    order: 2;
+  }
+  .accordion-wrapper li:nth-child(5) {
+    order: 4;
+  }
+  .accordion-wrapper li:nth-child(6) {
+    order: 6;
+  }
+
+  .accordion-wrapper .ac.ac-item {
+    width: 688px;
+  }
+
+  .accordion-wrapper .ac.acx {
+    max-width: 688px;
+  }
+
+  .accordion-wrapper .ac.acx.ac-faq-item {
+    border-right: 1px solid rgba(250, 250, 250, 0.2);
+  }
+
+  .accordion-wrapper .ac.ac-item.faq-item {
+    border-right: 1px solid rgba(250, 250, 250, 0.2);
+  }
+
+  .accordion-wrapper .ac.ac-item .ac-trigger {
+    max-width: 688px;
+    padding-right: 32px;
+  }
+
+  .accordion-wrapper .ac.acx .ac-trigger {
+    max-width: 688px;
+    padding-left: 32px;
+  }
+  .faq-toggle-button {
+    margin-left: 30px;
+  }
+  .accordion-wrapper .ac .ac-panel .ac-text.faq-text-l {
+    padding-right: 32px;
+    padding-bottom: 26px;
+  }
+
+  .accordion-wrapper .ac .ac-panel .ac-text.faq-text-l.faq-text-l-extra {
+    padding-left: 32px;
+    padding-right: 0;
+  }
+
+  .accordion-wrapper .ac .ac-panel .ac-text.faq-text-r {
+    padding-right: 0;
+    padding-left: 32px;
+    padding-bottom: 26px;
+  }
+
+  .accordion-wrapper .ac .ac-panel .ac-text.faq-text-r.faq-text-r-extra {
+    padding-left: 0;
+    padding-right: 32px;
+  }
+
+  .accordion-wrapper .ac.ac-item .ac-trigger.btn-trigger {
+    padding-right: 0;
+    padding-left: 32px;
+  }
+
+  .accordion-wrapper .ac.acx .ac-trigger.ac-btn-trigger {
+    padding-left: 0;
+    padding-right: 32px;
+  }
+}
