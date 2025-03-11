@@ -31,10 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
       keyboard: { enabled: true, onlyInViewport: true },
       mousewheel: true,
       speed: 500,
+      navigation: {
+        nextEl: '.about-me-swiper__next',
+      },
       breakpoints: { 768: { slidesPerView: 3 }, 1440: { slidesPerView: 6 } },
     });
-
-    const aboutNextButton = document.querySelector('.about-me-swiper__next');
-    aboutNextButton?.addEventListener('click', () => aboutSwiper.slideNext());
   }
 });
