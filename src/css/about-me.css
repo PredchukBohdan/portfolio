@@ -1,7 +1,7 @@
 .about-me {
   width: 100%;
   background-color: #1c1d20;
-  padding-top: 32px;
+  padding-top: 64px;
   padding-bottom: 32px;
   overflow: hidden;
 }
@@ -51,7 +51,6 @@
 
 @media (min-width: 768px) {
   .about-me {
-    padding-top: 32px;
     padding-bottom: 48px;
   }
   .about-me-container {
@@ -74,7 +73,7 @@
 }
 @media (min-width: 1440px) {
   .about-me {
-    padding-top: 48px;
+    padding-top: 96px;
     padding-bottom: 82px;
   }
   .about-me-container {
@@ -102,6 +101,9 @@
 .about-me-accordion {
   background-color: #1c1d20;
 }
+.about-me-accordion__content--list {
+  padding-bottom: 20px;
+}
 .about-me-accordion__item.ac {
   background-color: #1c1d20;
   border: none;
@@ -124,6 +126,9 @@
   justify-content: space-between !important;
   transition: padding 0.5s ease !important;
 }
+.about-me-accordion__item.ac.is-active .about-me-accordion__title .ac-trigger {
+  padding: 0 0 12px !important;
+}
 .about-me-accordion__title .ac-trigger::after {
   display: none;
 }
@@ -136,12 +141,12 @@
   color: #fafafa;
   padding: 0;
 }
-.about-me-accordion__content.ac-panel li.ac-text:first-child {
+/* .about-me-accordion__content.ac-panel li.ac-text:first-child {
   padding-top: 12px;
 }
 .about-me-accordion__content.ac-panel li.ac-text:last-child {
   padding-bottom: 20px;
-}
+} */
 .about-me-accordion__content.ac-panel li.ac-text:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -191,17 +196,20 @@
   .about-me-accordion__item.ac.is-active
     .about-me-accordion__title
     .ac-trigger {
-    padding: 0 !important;
+    padding-bottom: 8px !important;
   }
-  .about-me-accordion__content.ac-panel li.ac-text:first-child {
+  /* .about-me-accordion__item.ac.is-active .about-me-accordion__content.ac-panel {
+    padding-top: 12px;
+  } */
+  /* .about-me-accordion__content.ac-panel li.ac-text:first-child {
     padding-top: 8px;
-  }
+  } */
   .about-me-accordion__content.ac-panel li.ac-text:not(:last-child) {
     margin-bottom: 16px;
   }
-  .about-me-accordion__content.ac-panel li.ac-text:last-child {
+  /* .about-me-accordion__content.ac-panel li.ac-text:last-child {
     padding-bottom: 32px;
-  }
+  } */
 }
 @media (min-width: 1440px) {
   .about-me-accordion__content.ac-panel {
@@ -212,6 +220,12 @@
   }
   .about-me-accordion__content.ac-panel li.ac-text:not(:last-child) {
     margin-bottom: 32px;
+  }
+  .about-me-accordion__item.ac:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .about-me-accordion__content--list {
+    padding-bottom: 32px;
   }
 }
 

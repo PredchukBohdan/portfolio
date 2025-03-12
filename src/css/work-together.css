@@ -2,14 +2,15 @@
   width: 100%;
   max-width: 375px;
   margin: 0 auto;
-  padding-top: 32px;
+  padding-top: 64px;
+  padding-bottom: 32px;
   box-sizing: border-box;
 }
 
 .work-together-section {
   max-width: 100%;
   margin: 0 auto;
-  padding: 32px 16px;
+  padding: 0 16px;
   background-image: url(/img/work-together/Glass-effect-mob-@1x.jpg);
   background-repeat: no-repeat;
   background-position: right center;
@@ -125,7 +126,6 @@
 
 .work-together-contacts {
   display: block;
-  margin-bottom: 32px;
 }
 
 .work-together-contacts-list {
@@ -239,12 +239,13 @@
 @media screen and (min-width: 768px) {
   .work-together {
     max-width: 768px;
-    padding-top: 48px;
+    padding-top: 128px;
+    padding-bottom: 169px;
   }
 
   .work-together-section {
     width: 768px;
-    padding: 80px 32px;
+    padding: 0 32px;
     background-image: url(/img/work-together/Glass-effect-tab-@1x.jpg);
   }
 
@@ -296,10 +297,6 @@
     flex-shrink: 0;
   }
 
-  .work-together-contacts {
-    margin-bottom: 169px;
-  }
-
   .work-together-contacts-list {
     gap: 8px;
   }
@@ -327,12 +324,14 @@
 @media screen and (min-width: 1440px) {
   .work-together {
     max-width: 1440px;
-    padding-top: 82px;
+    padding-top: 162px;
+    padding-bottom: 169px;
   }
 
   .work-together-section {
-    width: 1440px;
-    padding: 80px 196px;
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 196px;
     background-image: url(/img/work-together/Glass-effect-desk-@1x.jpg);
   }
 

@@ -1,4 +1,3 @@
-
 window.addEventListener('DOMContentLoaded', () => {
   const coversSection = document.querySelector('#covers');
   if (!coversSection) return;
@@ -8,11 +7,11 @@ window.addEventListener('DOMContentLoaded', () => {
       entries.forEach(entry => {
         entry.target.classList.toggle(
           'animation',
-          entry.intersectionRatio >= 0.5
+          entry.intersectionRatio >= 0.15
         );
       });
     },
-    { threshold: 0.5 }
+    { threshold: 0.15 }
   );
 
   observer.observe(coversSection);
