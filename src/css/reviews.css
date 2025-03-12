@@ -1,5 +1,8 @@
+.reviews-section {
+  padding: 32px 0;
+}
 .reviews-container {
-  padding: 32px 16px;
+  padding: 0 16px;
 }
 .reviews-hdr {
   margin-bottom: 32px;
@@ -122,8 +125,11 @@
 /* ====================================================================================== */
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
+  .reviews-section {
+    padding: 48px 0;
+  }
   .reviews-container {
-    padding: 48px 32px;
+    padding: 0 32px;
   }
   .reviews-swiper-nav {
     gap: 20px;
@@ -143,8 +149,11 @@
 /* ====================================================================================== */
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
+  .reviews-section {
+    padding: 82px 0;
+  }
   .reviews-container {
-    padding: 82px 32px;
+    padding: 0 32px;
   }
   #reviews-list > li {
     max-width: 332px;
