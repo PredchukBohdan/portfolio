@@ -8,7 +8,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function openMenu() {
     nav.classList.add('active');
-    // document.body.style.overflow = 'hidden';
+    if (window.innerWidth < 768) {
+      document.body.style.overflow = 'hidden';
+    }
   }
 
   function closeNavMenu() {
