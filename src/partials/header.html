@@ -1,1 +1,47 @@
-<header class="page-header">Header</header>
+<header class="page-header">
+  <div class="container header-wrapper">
+    <a class="header__logo" href="/index.html">
+      <img
+        src="/img/header/image-logo-1x-min.jpg"
+        srcset="
+          /img/header/image-logo-1x-min.jpg 1x,
+          /img/header/image-logo-2x-min.jpg 2x
+        "
+        alt="Profile photo"
+        class="header__logo-img"
+        width="80"
+        height="80"
+      />
+      <span class="header__logo-text">jefferson*</span>
+    </a>
+
+    <button class="burger-menu" id="burger-menu">
+      <svg class="burger-menu__icon" width="28" height="28">
+        <use href="/img/sprite.svg#icon-burger-menu"></use>
+      </svg>
+    </button>
+
+    <nav class="nav" id="nav">
+      <button class="close-menu" id="close-menu">
+        <svg class="burger-menu__close-btn" width="28" height="28">
+          <use href="/img/sprite.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+      <ul class="nav__list">
+        <li><a href="#about-me">About me</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <button class="order-btn-mobile-menu">
+        <a href="#work-together">Order the project</a>
+      </button>
+    </nav>
+
+    <button class="menu-toggle" id="menu-toggle">Menu</button>
+
+    <button class="order-btn">
+      <a href="#work-together">Order the project</a>
+    </button>
+  </div>
+</header>
