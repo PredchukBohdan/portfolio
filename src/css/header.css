@@ -36,8 +36,11 @@
   height: 28px;
   background: none;
   border: none;
-  display: block;
   stroke: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
 .menu-toggle {
@@ -104,7 +107,8 @@
   transition: 0.3s;
 }
 
-.nav__list a:hover {
+.nav__list a:hover,
+.nav__list a:focus {
   color: red;
 }
 
@@ -126,6 +130,11 @@
   font-size: 14px;
   letter-spacing: -0.02em;
   color: var(--main-text);
+}
+
+.order-btn-mobile-menu:hover,
+.order-btn-mobile-menu:focus {
+  background: #e0373f;
 }
 
 /* Кнопка "Order the project" */
@@ -162,6 +171,11 @@
     font-size: 16px;
     letter-spacing: -0.02em;
     color: var(--main-text);
+  }
+
+  .order-btn:hover,
+  .order-btn:focus {
+    background: #e0373f;
   }
 
   .menu-toggle {
