@@ -1,6 +1,6 @@
 .hero-section {
   width: 100%;
-  background-image: url('/img/hero/hero-phone.png');
+  background-image: url('/img/hero/hero-phone.jpg');
   background-size: cover;
   padding-bottom: 32px;
   background-repeat: no-repeat;
@@ -21,11 +21,6 @@ h1 {
   text-transform: uppercase;
   color: #fafafa;
   margin-bottom: 212px;
-}
-.hero-socials {
-  /* position: absolute;
-  bottom: 32px;
-  right: 17px; */
 }
 .soc-list {
   display: flex;
@@ -79,7 +74,7 @@ h1 {
   .hero-section {
     padding-top: 300px;
     height: 1024px;
-    background-image: url('/img/hero/hero-tablet.png');
+    background-image: url('/img/hero/hero-tablet.jpg');
   }
   .hero-container {
     padding: 0 32px;
@@ -112,7 +107,7 @@ h1 {
 
 @media (min-width: 1440px) {
   .hero-section {
-    background: url('/img/hero/hero-desktop.png') no-repeat center/cover;
+    background: url('/img/hero/hero-desktop.jpg') no-repeat center/cover;
     height: 900px;
   }
   .hero {
@@ -132,36 +127,36 @@ h1 {
 
 @media screen and (min-resolution: 192dpi) {
   .hero-section {
-    background-image: url('/img/hero/hero-phone@2x.png');
+    background-image: url('../img/hero/hero-phone@2x.jpg');
   }
 }
 
 @media screen and (min-resolution: 288dpi) {
   .hero-section {
-    background-image: url('/img/hero/hero-phone@3x.png');
+    background-image: url('/img/hero/hero-phone@3x.jpg');
   }
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .hero-section {
-    background-image: url('/img/hero/hero-tablet@2x.png');
+    background-image: url('/img/hero/hero-tablet@2x.jpg');
   }
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 288dpi) {
   .hero-section {
-    background-image: url('/img/hero/hero-tablet@3x.png');
+    background-image: url('/img/hero/hero-tablet@3x.jpg');
   }
 }
 
 @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
   .hero-section {
-    background-image: url('/img/hero/hero-desktop@2x.png');
+    background-image: url('/img/hero/hero-desktop@2x.jpg');
   }
 }
 
 @media screen and (min-width: 1440px) and (min-resolution: 288dpi) {
   .hero-section {
-    background-image: url('/img/hero/hero-desktop@3x.png');
+    background-image: url('/img/hero/hero-desktop@3x.jpg');
   }
 }

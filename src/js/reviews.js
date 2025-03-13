@@ -28,6 +28,7 @@ async function initReviews() {
       slidesPerView: 1,
       spaceBetween: 16,
       grabCursor: true,
+      speed: 500,
       // mousewheel: true,
       keyboard: {
         enabled: true,
@@ -56,7 +57,7 @@ async function initReviews() {
   }
 }
 function reviewTemplate({ author, avatar_url, review }) {
-  return `<li class="swiper-slide">
+  return `<li class="swiper-slide" role="none">
             <img src="${avatar_url}" alt="${author}'s photo" />
             <h3>${author}</h3>
             <p>${review}</p>
