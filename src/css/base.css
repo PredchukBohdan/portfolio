@@ -30,4 +30,5 @@ body {
   font-weight: 400;
   color: var(--main-text);
   background-color: var(--background);
+  position: relative;
 }

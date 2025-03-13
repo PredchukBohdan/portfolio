@@ -58,7 +58,7 @@ async function initReviews() {
 }
 function reviewTemplate({ author, avatar_url, review }) {
   return `<li class="swiper-slide" role="none">
-            <img src="${avatar_url}" alt="${author}'s photo" />
+            <img src="${avatar_url}" alt="${author}'s photo" loading="lazy"/>
             <h3>${author}</h3>
             <p>${review}</p>
           </li>`;
