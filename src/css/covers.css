@@ -11,7 +11,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('/img/covers/covers_background.png');
+  background-image: url('/img/covers/covers_background.webp');
   overflow: hidden;
   position: relative;
 }
@@ -20,7 +20,7 @@
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .covers-wrapper {
-    background-image: url('/img/covers/covers_background@2x.png');
+    background-image: url('/img/covers/covers_background@2x.webp');
   }
 }
 
@@ -71,14 +71,14 @@
 @media (min-width: 768px) {
   .covers-wrapper {
     height: 960px;
-    background-image: url('/img/covers/covers_background.png');
+    background-image: url('/img/covers/covers_background.webp');
   }
 
   /* Медіазапит для заміни фону на ретіна екранах */
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .covers-wrapper {
-      background-image: url('/img/covers/covers_background@2x.png');
+      background-image: url('/img/covers/covers_background@2x.webp');
     }
   }
   /* .covers-container {
@@ -119,12 +119,12 @@
 }
 @media (min-width: 1440px) {
   .covers-wrapper {
-    background-image: url('/img/covers/covers_background.png');
+    background-image: url('/img/covers/covers_background.webp');
   }
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .covers-wrapper {
-      background-image: url('/img/covers/covers_background@2x.png');
+      background-image: url('/img/covers/covers_background@2x.webp');
     }
   }
   .covers-list {
