@@ -11,7 +11,7 @@
   max-width: 100%;
   margin: 0 auto;
   padding: 0 16px;
-  background-image: url(/img/work-together/Glass-effect-mob-@1x.jpg);
+  background-image: url(/img/work-together/Glass-effect-mob-@1x.webp);
   background-repeat: no-repeat;
   background-position: right center;
   background-size: auto 100%;
@@ -19,7 +19,7 @@
 
 @media screen and (min-resolution: 192dpi) {
   .work-together-section {
-    background-image: url(/img/work-together/Glass-effect-mob-@2x.jpg);
+    background-image: url(/img/work-together/Glass-effect-mob-@2x.webp);
   }
 }
 
@@ -247,12 +247,12 @@
   .work-together-section {
     width: 768px;
     padding: 0 32px;
-    background-image: url(/img/work-together/Glass-effect-tab-@1x.jpg);
+    background-image: url(/img/work-together/Glass-effect-tab-@1x.webp);
   }
 
   @media screen and (min-resolution: 192dpi) {
     .work-together-section {
-      background-image: url(/img/work-together/Glass-effect-tab-@2x.jpg);
+      background-image: url(/img/work-together/Glass-effect-tab-@2x.webp);
     }
   }
 
@@ -333,12 +333,12 @@
     max-width: 1440px;
     width: 100%;
     padding: 0 196px;
-    background-image: url(/img/work-together/Glass-effect-desk-@1x.jpg);
+    background-image: url(/img/work-together/Glass-effect-desk-@1x.webp);
   }
 
   @media screen and (min-resolution: 192dpi) {
     .work-together-section {
-      background-image: url(/img/work-together/Glass-effect-desk-@2x.jpg);
+      background-image: url(/img/work-together/Glass-effect-desk-@2x.webp);
     }
   }
 
