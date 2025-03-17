@@ -22,8 +22,8 @@
   opacity: 1;
 }
 .scroll-to-top:hover .scroll-to-top__button {
-  background-color: #ed3b44;
-  border-color: #ed3b44;
+  background-color: var(--main-color);
+  border-color: var(--main-color);
 }
 .scroll-to-top__button {
   width: 100%;

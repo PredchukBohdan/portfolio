@@ -58,7 +58,7 @@
 }
 
 .work-together-heading-accent {
-  color: #ed3b44;
+  color: var(--main-color);
 }
 
 .work-together-field-container {
@@ -111,18 +111,18 @@
   font-size: 16px;
   letter-spacing: -0.02em;
   color: #fafafa;
-  background-color: #ed3b44;
+  background-color: var(--main-color);
   margin-top: 32px;
   margin-bottom: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .work-together-btn:hover,
 .work-together-btn:focus {
-  background-color: #e0373f;
+  filter: brightness(90%);
 }
 
 .work-together-contacts {

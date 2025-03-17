@@ -32,7 +32,7 @@
   color: #fafafa;
 }
 .about-me-media__title .red-text {
-  color: #ed3b44;
+  color: var(--main-color);
 }
 .about-me-media__title .gray-text {
   color: #fafafa66;
@@ -258,7 +258,7 @@
   color: #fafafa;
 }
 .about-me-slider .about-me-swiper__slide.swiper-slide-active {
-  background-color: #ed3b44;
+  background-color: var(--main-color);
   border: none;
 }
 .about-me-swiper__next {

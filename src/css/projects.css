@@ -66,15 +66,15 @@
   text-decoration: none;
   border-radius: 60px;
   padding: 13px 32px;
-  background: #ed3b44;
+  background: var(--main-color);
   font-size: 16px;
   letter-spacing: -0.02em;
   color: #fafafa;
-  transition: background-color 0.3s ease;
+  transition: all 0.5s ease;
 }
 .project-link:hover,
 .project-link:focus {
-  background: #e0373f;
+  filter: brightness(90%);
 }
 .project-section .swiper-container {
   overflow: hidden;

@@ -105,18 +105,19 @@
   letter-spacing: -0.02em;
   color: white;
   font-size: 24px;
-  transition: 0.3s;
+  transition: color 0.5s ease;
 }
 
 .nav__list a:hover,
 .nav__list a:focus {
-  color: red;
+  color: var(--main-color);
 }
 
 .order-btn-mobile-menu {
   display: block;
-  background: var(--button-text);
+  background: var(--main-color);
   border: none;
+  transition: all 0.5s ease;
 
   position: absolute;
   bottom: 64px;
@@ -135,7 +136,7 @@
 
 .order-btn-mobile-menu:hover,
 .order-btn-mobile-menu:focus {
-  background: #e0373f;
+  filter: brightness(90%);
 }
 
 /* Кнопка "Order the project" */
@@ -164,7 +165,7 @@
 
   .order-btn {
     display: block;
-    background: var(--button-text);
+    background: var(--main-color);
     border: none;
 
     border-radius: 60px;
@@ -175,11 +176,12 @@
     font-size: 16px;
     letter-spacing: -0.02em;
     color: var(--main-text);
+    transition: all 0.5s ease;
   }
 
   .order-btn:hover,
   .order-btn:focus {
-    background: #e0373f;
+    filter: brightness(90%);
   }
 
   .menu-toggle {
