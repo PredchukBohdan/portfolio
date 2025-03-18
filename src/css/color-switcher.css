@@ -4,6 +4,7 @@
   top: 20%;
   transform: translateX(-100%);
   transition: transform 0.5s ease;
+  z-index: 1;
 }
 .color-switcher.active {
   transform: translateX(0);

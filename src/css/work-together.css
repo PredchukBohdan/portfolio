@@ -103,6 +103,7 @@
 }
 
 .work-together-btn {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
   width: 100px;
   height: 100px;
   border-radius: 100%;
@@ -122,7 +123,7 @@
 
 .work-together-btn:hover,
 .work-together-btn:focus {
-  filter: brightness(90%);
+  background-color: var(--main-hover);
 }
 
 .work-together-contacts {
@@ -141,11 +142,14 @@
 .work-together-contacts-item {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
-  padding: 10px 12px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: border 0.5s ease;
+}
+.work-together-contacts-item:hover {
+  border: 1px solid #fafafa;
 }
 
 .work-together-contacts-link {
@@ -153,6 +157,8 @@
   font-size: 14px;
   letter-spacing: -0.02em;
   white-space: nowrap;
+  padding: 10px 12px;
+  display: block;
 }
 
 .backdrop {
@@ -302,12 +308,9 @@
     gap: 8px;
   }
 
-  .work-together-contacts-item {
-    padding: 18px 32px;
-  }
-
   .work-together-contacts-link {
     font-size: 16px;
+    padding: 18px 32px;
   }
 
   .modal {

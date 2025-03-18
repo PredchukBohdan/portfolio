@@ -256,6 +256,7 @@
   line-height: 150%;
   letter-spacing: -0.02em;
   color: #fafafa;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
 }
 .about-me-slider .about-me-swiper__slide.swiper-slide-active {
   background-color: var(--main-color);

@@ -1,10 +1,28 @@
 .hero-section {
   width: 100%;
-  background-image: url('/img/hero-narrow/hero-phone.webp');
   background-size: contain;
   padding-bottom: 32px;
   background-repeat: repeat-y;
   padding-top: 281px;
+  background-image: url('/img/hero-narrow/hero-phone.webp');
+}
+body[data-type='red'] .hero-section {
+  background-image: url('/img/hero-narrow/hero-phone.webp');
+}
+body[data-type='green'] .hero-section {
+  background-image: url('/img/hero-narrow/hero-mobile-green.webp');
+}
+body[data-type='blue'] .hero-section {
+  background-image: url('/img/hero-narrow/hero-mobile-blue.webp');
+}
+body[data-type='orange'] .hero-section {
+  background-image: url('/img/hero-narrow/hero-mobile-orange.webp');
+}
+body[data-type='dark'] .hero-section {
+  background-image: url('/img/hero-narrow/hero-mobile-dark.webp');
+}
+body[data-type='yellow'] .hero-section {
+  background-image: url('/img/hero-narrow/hero-mobile-yellow.webp');
 }
 .hero-container {
   padding: 0 16px;
@@ -44,7 +62,7 @@ h1 {
   padding: 10px;
   text-decoration: none;
   cursor: pointer;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 0.5s ease;
 }
 .soc-link-mail {
   display: flex;
@@ -57,7 +75,7 @@ h1 {
   height: 37px;
   text-decoration: none;
   width: 100%;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 0.5s ease;
 }
 .soc-link:hover,
 .soc-link:focus,
@@ -74,7 +92,29 @@ h1 {
   .hero-section {
     padding-top: 300px;
     height: 1024px;
-    background-image: url('/img/hero-narrow/hero-tablet.webp');
+  }
+  body[data-type='red'] .hero-section {
+    background: url('/img/hero-narrow/hero-tablet.webp') repeat-y center/contain;
+  }
+  body[data-type='green'] .hero-section {
+    background: url('/img/hero-narrow/hero-tablet-green.webp') repeat-y
+      center/contain;
+  }
+  body[data-type='blue'] .hero-section {
+    background: url('/img/hero-narrow/hero-tablet-blue.webp') repeat-y
+      center/contain;
+  }
+  body[data-type='orange'] .hero-section {
+    background: url('/img/hero-narrow/hero-tablet-orange.webp') repeat-y
+      center/contain;
+  }
+  body[data-type='dark'] .hero-section {
+    background: url('/img/hero-narrow/hero-tablet-dark.webp') repeat-y
+      center/contain;
+  }
+  body[data-type='yellow'] .hero-section {
+    background: url('/img/hero-narrow/hero-tablet-yellow.webp') repeat-y
+      center/contain;
   }
   .hero-container {
     padding: 0 32px;
@@ -107,9 +147,31 @@ h1 {
 
 @media (min-width: 1440px) {
   .hero-section {
+    height: 900px;
+  }
+  body[data-type='red'] .hero-section {
     background: url('/img/hero-narrow/hero-desktop.webp') repeat-y
       center/contain;
-    height: 900px;
+  }
+  body[data-type='green'] .hero-section {
+    background: url('/img/hero-narrow/hero-desktop-green.webp') repeat-y
+      center/contain;
+  }
+  body[data-type='blue'] .hero-section {
+    background: url('/img/hero-narrow/hero-desktop-blue.webp') repeat-y
+      center/contain;
+  }
+  body[data-type='orange'] .hero-section {
+    background: url('/img/hero-narrow/hero-desktop-orange.webp') repeat-y
+      center/contain;
+  }
+  body[data-type='dark'] .hero-section {
+    background: url('/img/hero-narrow/hero-desktop-dark.webp') repeat-y
+      center/contain;
+  }
+  body[data-type='yellow'] .hero-section {
+    background: url('/img/hero-narrow/hero-desktop-yellow.webp') repeat-y
+      center/contain;
   }
   .hero {
     align-items: center;
@@ -127,19 +189,76 @@ h1 {
 }
 
 @media screen and (min-resolution: 192dpi) {
-  .hero-section {
+  body[data-type='red'] .hero-section {
     background-image: url('/img/hero-narrow/hero-phone@2x.webp');
+  }
+  body[data-type='green'] .hero-section {
+    background-image: url('/img/hero-narrow/hero-mobile-green@2x.webp');
+  }
+  body[data-type='blue'] .hero-section {
+    background-image: url('/img/hero-narrow/hero-mobile-blue@2x.webp');
+  }
+  body[data-type='orange'] .hero-section {
+    background-image: url('/img/hero-narrow/hero-mobile-orange@2x.webp');
+  }
+  body[data-type='dark'] .hero-section {
+    background-image: url('/img/hero-narrow/hero-mobile-dark@2x.webp');
+  }
+  body[data-type='yellow'] .hero-section {
+    background-image: url('/img/hero-narrow/hero-mobile-yellow@2x.webp');
   }
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
-  .hero-section {
-    background-image: url('/img/hero-narrow/hero-tablet@2x.webp');
+  body[data-type='red'] .hero-section {
+    background: url('/img/hero-narrow/hero-tablet@2x.webp') repeat-y
+      center/contain;
+  }
+  body[data-type='green'] .hero-section {
+    background: url('/img/hero-narrow/hero-tablet-green@2x.webp') repeat-y
+      center/contain;
+  }
+  body[data-type='blue'] .hero-section {
+    background: url('/img/hero-narrow/hero-tablet-blue@2x.webp') repeat-y
+      center/contain;
+  }
+  body[data-type='orange'] .hero-section {
+    background: url('/img/hero-narrow/hero-tablet-orange@2x.webp') repeat-y
+      center/contain;
+  }
+  body[data-type='dark'] .hero-section {
+    background: url('/img/hero-narrow/hero-tablet-dark@2x.webp') repeat-y
+      center/contain;
+  }
+  body[data-type='yellow'] .hero-section {
+    background: url('/img/hero-narrow/hero-tablet-yellow@2x.webp') repeat-y
+      center/contain;
   }
 }
 
 @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
-  .hero-section {
-    background-image: url('/img/hero-narrow/hero-desktop@2x.webp');
+  body[data-type='red'] .hero-section {
+    background: url('/img/hero-narrow/hero-desktop@2x.webp') repeat-y
+      center/contain;
+  }
+  body[data-type='green'] .hero-section {
+    background: url('/img/hero-narrow/hero-desktop-green@2x.webp') repeat-y
+      center/contain;
+  }
+  body[data-type='blue'] .hero-section {
+    background: url('/img/hero-narrow/hero-desktop-blue@2x.webp') repeat-y
+      center/contain;
+  }
+  body[data-type='orange'] .hero-section {
+    background: url('/img/hero-narrow/hero-desktop-orange@2x.webp') repeat-y
+      center/contain;
+  }
+  body[data-type='dark'] .hero-section {
+    background: url('/img/hero-narrow/hero-desktop-dark@2x.webp') repeat-y
+      center/contain;
+  }
+  body[data-type='yellow'] .hero-section {
+    background: url('/img/hero-narrow/hero-desktop-yellow@2x.webp') repeat-y
+      center/contain;
   }
 }

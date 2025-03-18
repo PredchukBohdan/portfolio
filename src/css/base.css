@@ -9,7 +9,8 @@
   --arrow: #3b3b3b;
   --button-text: #ed3b44;
   --main-text: #fafafa;
-  --main-color: #ed3b44;
+  --main-color: transparent;
+  --main-hover: transparent;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

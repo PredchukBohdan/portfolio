@@ -1,13 +1,19 @@
 .page-header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  padding: 32px 0;
+  padding: 16px 0;
   background: transparent;
   z-index: 1000;
+  transition: background 0.5s ease, padding 0.3s ease, box-shadow 0.5s ease;
 }
-
+.page-header.sticky {
+  background: #1c1d20e3;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 5px 4px 4px #1c1d20e3;
+  padding-bottom: 8px;
+}
 .header-wrapper {
   width: 100%;
   display: flex;
@@ -54,8 +60,8 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background-image: url('/img/header/glass_effect-1x-min.webp');
-  background-size: cover;
+  background-size: contain;
+  background-repeat: repeat-y;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,10 +70,42 @@
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
-
+body[data-type='red'] .nav {
+  background-image: url('/img/header/menu-red.webp');
+}
+body[data-type='green'] .nav {
+  background-image: url('/img/header/menu-green.webp');
+}
+body[data-type='blue'] .nav {
+  background-image: url('/img/header/menu-blue.webp');
+}
+body[data-type='orange'] .nav {
+  background-image: url('/img/header/menu-orange.webp');
+}
+body[data-type='dark'] .nav {
+  background-image: url('/img/header/menu-dark.webp');
+}
+body[data-type='yellow'] .nav {
+  background-image: url('/img/header/menu-yellow.webp');
+}
 @media (min-resolution: 192dpi) {
-  .nav {
-    background-image: url('/img/header/glass_effect-2x-min.webp');
+  body[data-type='red'] .nav {
+    background-image: url('/img/header/menu-red@2x.webp');
+  }
+  body[data-type='green'] .nav {
+    background-image: url('/img/header/menu-green@2x.webp');
+  }
+  body[data-type='blue'] .nav {
+    background-image: url('/img/header/menu-blue@2x.webp');
+  }
+  body[data-type='orange'] .nav {
+    background-image: url('/img/header/menu-orange@2x.webp');
+  }
+  body[data-type='dark'] .nav {
+    background-image: url('/img/header/menu-dark@2x.webp');
+  }
+  body[data-type='yellow'] .nav {
+    background-image: url('/img/header/menu-yellow@2x.webp');
   }
 }
 
@@ -132,11 +170,12 @@
   font-size: 14px;
   letter-spacing: -0.02em;
   color: var(--main-text);
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
 }
 
 .order-btn-mobile-menu:hover,
 .order-btn-mobile-menu:focus {
-  filter: brightness(90%);
+  background: var(--main-hover);
 }
 
 /* Кнопка "Order the project" */
@@ -151,6 +190,10 @@
 }
 
 @media (min-width: 768px) {
+  .page-header .nav {
+    background: transparent;
+    background-image: none !important;
+  }
   .burger-menu {
     display: none;
   }
@@ -164,6 +207,7 @@
   }
 
   .order-btn {
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
     display: block;
     background: var(--main-color);
     border: none;
@@ -181,7 +225,7 @@
 
   .order-btn:hover,
   .order-btn:focus {
-    filter: brightness(90%);
+    background: var(--main-hover);
   }
 
   .menu-toggle {

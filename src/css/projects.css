@@ -71,10 +71,11 @@
   letter-spacing: -0.02em;
   color: #fafafa;
   transition: all 0.5s ease;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
 }
 .project-link:hover,
 .project-link:focus {
-  filter: brightness(90%);
+  background: var(--main-hover);
 }
 .project-section .swiper-container {
   overflow: hidden;
