@@ -4,7 +4,7 @@
   padding-bottom: 32px;
   background-repeat: repeat-y;
   padding-top: 281px;
-  background-image: url('/img/hero-narrow/hero-phone.webp');
+  background-image: none;
 }
 body[data-type='red'] .hero-section {
   background-image: url('/img/hero-narrow/hero-phone.webp');

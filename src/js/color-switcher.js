@@ -48,7 +48,7 @@
         if (!color) return;
         window.localStorage.setItem('main-color', color);
         window.localStorage.setItem('main-hover', hover);
-        window.localStorage.setItem('color-theme-type', type);
+        window.localStorage.setItem('main-theme-type', type);
       }
       bindEvents() {
         this.switcherButton?.addEventListener(
